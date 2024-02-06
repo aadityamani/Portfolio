@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Aaditya's Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Poppins', sans-serif;
+            color: blueviolet;
+        }
+        header nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #8aaae5;
+            
+        }
+        header nav ul{
+            
+            display: flex;
+            justify-content: center; 
+        }
+        header nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        header nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        header .left{
+            font-size: 1.5rem;
+            color: white;
+        }
+        .project-grid{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .project-grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+
+        .project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 30%; /* Adjust the width as needed */
+    margin: 1%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card:hover img {
+    opacity: 0;
+}
+
+.project-card:hover .project-info {
+    opacity: 1;
+}
+
+.project-card:hover p {
+    opacity: 1;
+}
+
+    /* p {
+        display: none; /* Hide project description by default 
+        word-break: break-all;
+        white-space: normal;
+    }*/
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Aaditya Mani Tripathi's Portfolio</div>
+            <div class="right">
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="projects.html">Portfolio</a></li>
+                 <li><a href="skills.html">Skills</a></li>
+                 <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="project-grid">
+    
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <img src="pics/Image1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Brand Identity Redesign for XYZ Company:</h3>
+                    <p>
+                        Elevate XYZ Company's visual identity by redesigning their brand elements, including the logo, color palette, and typography. The goal is to modernize the brand, making it more appealing to the target audience while maintaining its core values. Deliverables include a comprehensive brand style guide.</p>
+                </div>
+            </div>
+    
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <img src="pics/Image2.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Event Poster Series for Local Arts Festival:</h3>
+                    <p>Create a captivating series of posters for a local arts festival, highlighting various events and performances. Incorporate vibrant colors, dynamic typography, and engaging visuals to convey the diverse range of activities. The posters should effectively communicate the festival's atmosphere and attract a diverse audience.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <img src="pics/Image3.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>Interactive Website Design for Creative Portfolio:</h3>
+                    <p>
+                        Develop an interactive and visually striking website to showcase a creative professional's portfolio. The design should seamlessly integrate various multimedia elements, allowing visitors to explore the portfolio in an engaging manner. Prioritize user experience and ensure the website reflects the unique style and personality of the artist.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="project-card" onmouseover="hoverProject(this)" onmouseout="unhoverProject(this)">
+                <img src="pics/Image4.png" alt="Project 4">
+                <div class="project-info">
+                    <h3>Social Media Campaign for Sustainable Lifestyle Brand:</h3>
+                    <p>Craft a social media campaign for a sustainable lifestyle brand that promotes eco-friendly products and practices. Design visually appealing graphics and animations to communicate the brand's commitment to sustainability. Implement a cohesive visual theme across platforms to build brand recognition and encourage a conscious lifestyle.
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    
+</body>
+</html>
